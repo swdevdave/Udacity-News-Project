@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Guardian News Reader</string>
+    <string name="no_internet">Oops, something went wrong connecting to the internet.\n\nPlease check your connection\nand try again.</string>
+    <string name="no_news">Oh no! We searched, but could not find any news at this time.\n\n
+        This could be caused by one of the following:\n\n
+        &#8226; Chosen content was misspelled or has no results.\n
+        &#8226; No content available for your selection.\n
+        &#8226; Max Stories set to 0.\n\n\n
+        Please make changes, or try again shortly.</string>
+    <string name="written_by">Written By:</string>
+    <string name="api_key" tools:ignore="TypographyDashes">d53a4f2e-edce-405c-b888-0a3736929d1b</string>
+
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+
+    <string name="settings_content_label">Pick News Content to View</string>
+    <string name="settings_content_default" translatable="false">technology</string>
+    <string name="settings_content_key">content_key</string>
+
+    <string name="settings_max_news_label">Maximum Stories to Display</string>
+    <string name="settings_max_news_default" translatable="false">10</string>
+    <string name="settings_max_news_key">stories_key</string>
+    <string name="story_hint">Football</string>
+
+</resources>

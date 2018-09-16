@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+
+    <TextView
+        android:id="@+id/writtenby_textView"
+        style="@style/newsdetailstextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/written_by"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_view" />
+
+    <TextView
+        android:id="@+id/author_text_view"
+        style="@style/newsdetailstextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/writtenby_textView"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_view"
+        android:maxLength="30"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Author" />
+
+
+    <TextView
+        android:id="@+id/category_text_view"
+        style="@style/newsdetailstextstyle"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/writtenby_textView"
+        tools:text="Category" />
+
+
+    <TextView
+        android:id="@+id/date_text_view"
+        style="@style/newsdetailstextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/author_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/author_text_view"
+        tools:text="Date" />
+
+
+</android.support.constraint.ConstraintLayout>
